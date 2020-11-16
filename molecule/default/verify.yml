@@ -1,0 +1,12 @@
+---
+- name: Verify
+  hosts: all
+  vars_files:
+    - ../../defaults/main.yml
+  tasks:
+    - name: Gather the package manager facts
+      package_facts:
+        manager: auto
+    - name: Assert that following packages are installed
+      assert: { that: "'{{ item }}' in ansible_facts.packages" }
+      with_items: "{{ installed_packages }}"
