@@ -8,30 +8,30 @@ platforms:
     image: geerlingguy/docker-amazonlinux2-ansible:latest
     pre_build_image: true
     env:
-      http_proxy: ${http_proxy}
-      https_proxy: ${https_proxy}
-      no_proxy: ${no_proxy}
+      http_proxy: "${http_proxy}"
+      https_proxy: "${https_proxy}"
+      no_proxy: "${no_proxy}"
   - name: centos7
     image: docker.io/pycontribs/centos:7
     pre_build_image: true
     env:
-      http_proxy: ${http_proxy}
-      https_proxy: ${https_proxy}
-      no_proxy: ${no_proxy}
+      http_proxy: "${http_proxy}"
+      https_proxy: "${https_proxy}"
+      no_proxy: "${no_proxy}"
   - name: centos8
     image: docker.io/pycontribs/centos:8
     pre_build_image: true
     env:
-      http_proxy: ${http_proxy}
-      https_proxy: ${https_proxy}
-      no_proxy: ${no_proxy}
+      http_proxy: "${http_proxy}"
+      https_proxy: "${https_proxy}"
+      no_proxy: "${no_proxy}"
   - name: ubuntu1804
     image: geerlingguy/docker-ubuntu1804-ansible:latest
     pre_build_image: true
     env:
-      http_proxy: ${http_proxy}
-      https_proxy: ${https_proxy}
-      no_proxy: ${no_proxy}
+      http_proxy: "${http_proxy}"
+      https_proxy: "${https_proxy}"
+      no_proxy: "${no_proxy}"
 provisioner:
   name: ansible
   log: true
