@@ -4,5 +4,6 @@ installed_packages:
   - git
   - nano
   - rsync
+  - tar
   - unzip
   - wget
