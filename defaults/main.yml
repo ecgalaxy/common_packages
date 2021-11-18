@@ -8,3 +8,4 @@ installed_packages:
   - tar
   - unzip
   - wget
+  - gpg-agent
