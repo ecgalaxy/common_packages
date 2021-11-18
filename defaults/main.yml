@@ -2,10 +2,10 @@
 installed_packages:
   - curl
   - git
+  - gnupg2
   - jq
   - nano
   - rsync
   - tar
   - unzip
   - wget
-  - gpg-agent
