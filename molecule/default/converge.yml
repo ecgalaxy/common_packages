@@ -3,7 +3,7 @@
   hosts: all
   tasks:
     - name: "Include common_packages"
-      include_role:
+      ansible.builtin.include_role:
         name: "common_packages"
   environment:
     http_proxy: "{{ lookup('env', 'http_proxy') }}"

@@ -5,8 +5,8 @@
     - ../../defaults/main.yml
   tasks:
     - name: Gather the package manager facts
-      package_facts:
+      ansible.builtin.package_facts:
         manager: auto
     - name: Assert that following packages are installed
-      assert: { that: "'{{ item }}' in ansible_facts.packages" }
+      ansible.builtin.assert: { that: "'{{ item }}' in ansible_facts.packages" }
       with_items: "{{ installed_packages }}"
