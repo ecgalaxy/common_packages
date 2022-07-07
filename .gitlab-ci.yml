@@ -1,6 +1,7 @@
 variables:
   ROLE: ${CI_PROJECT_NAME}
   BRANCH: ${CI_COMMIT_REF_NAME}
+  PUBLISH: "true"
 
 test:
   trigger:
