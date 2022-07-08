@@ -39,6 +39,13 @@ platforms:
       http_proxy: "${http_proxy}"
       https_proxy: "${https_proxy}"
       no_proxy: "${no_proxy}"
+  - name: ubuntu2204-${CI_JOB_ID:-0}
+    image: code.europa.eu:4567/ecgalaxy/ubuntu2204-ansible:latest
+    pre_build_image: true
+    env:
+      http_proxy: "${http_proxy}"
+      https_proxy: "${https_proxy}"
+      no_proxy: "${no_proxy}"
 provisioner:
   name: ansible
   inventory:
