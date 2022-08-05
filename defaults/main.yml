@@ -1,5 +1,6 @@
 ---
 installed_packages:
+  - bzip2
   - curl
   - git
   - gnupg2
