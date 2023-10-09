@@ -1,11 +1,8 @@
 ---
 - name: Prepare
   hosts: all
-  tasks:
-    - name: Update apt cache
-      ansible.builtin.apt: update_cache=yes cache_valid_time=600
-      when: ansible_os_family == 'Debian'
-      changed_when: false
+  roles:
+    - role: ecgalaxy.bootstrap
   environment:
     http_proxy: "{{ lookup('env', 'http_proxy') }}"
     https_proxy: "{{ lookup('env', 'https_proxy') }}"

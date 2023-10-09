@@ -11,18 +11,19 @@ None.
 Role Variables
 --------------
 
-* `installed_packages`: the list of packages to install.
+- `installed_packages`: the list of packages to install.
 
 Dependencies
 ------------
 
-None.
+- optional: ecgalaxy.bootstrap
 
 Example Playbook
 ----------------
 
     - hosts: all
       roles:
+        - ecgalaxy.bootstrap
         - ecgalaxy.common_packages
 
 License
