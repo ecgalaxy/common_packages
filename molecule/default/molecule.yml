@@ -11,6 +11,13 @@ platforms:
       http_proxy: "${http_proxy}"
       https_proxy: "${https_proxy}"
       no_proxy: "${no_proxy}"
+  - name: amazonlinux2023-${CI_JOB_ID:-0}
+    image: code.europa.eu:4567/ecgalaxy/amazonlinux2023-ansible:latest
+    pre_build_image: true
+    environment:
+      http_proxy: "${http_proxy}"
+      https_proxy: "${https_proxy}"
+      no_proxy: "${no_proxy}"
   - name: centos7-${CI_JOB_ID:-0}
     image: code.europa.eu:4567/ecgalaxy/centos7-ansible:latest
     pre_build_image: true

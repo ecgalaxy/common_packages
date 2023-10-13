@@ -9,6 +9,7 @@ galaxy_info:
     - name: Amazon Linux
       versions:
         - "2"
+        - "2023"
     - name: EL
       versions:
         - "7"

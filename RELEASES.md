@@ -1,5 +1,9 @@
 # Releases
 
+## 1.4.x
+
+- Support for Amazon Linux 2023 is added.
+
 ## 1.3.x
 
 - bzip2 added to the list of packages.

@@ -1,4 +1,15 @@
 ---
+# See https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal
+- name: Prepare system (Amazon Linux 2023)
+  ansible.builtin.dnf:
+    name:
+      - curl
+      - gnupg2
+    state: present
+    allowerasing: true
+  become: true
+  when: ansible_distribution == 'Amazon' and ansible_distribution_major_version|int >= 2023
+
 - name: Install common packages
   ansible.builtin.package:
     name: "{{ installed_packages }}"
