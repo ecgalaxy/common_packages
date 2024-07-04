@@ -12,7 +12,6 @@ galaxy_info:
         - "2023"
     - name: EL
       versions:
-        - "7"
         - "8"
     - name: Ubuntu
       versions:
