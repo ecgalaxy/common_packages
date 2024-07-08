@@ -26,6 +26,22 @@ Example Playbook
         - ecgalaxy.bootstrap
         - ecgalaxy.common_packages
 
+One-liner
+---------
+
+    bash <(curl -s https://code.europa.eu/-/snippets/1/raw/main/ansible-role.sh) ecgalaxy.common_packages
+
+See [ansible-role](https://code.europa.eu/-/snippets/1) for instructions.
+
+Please verify the script integrity first.
+
+Upgrading & Uninstalling
+------------------------
+
+This Ansible role uses the distribution's package manager to install packages.
+
+In order to upgrade or uninstall a package, please refer to your distribution's package manager documentation.
+
 License
 -------
 

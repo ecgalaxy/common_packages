@@ -1,5 +1,9 @@
 # Releases
 
+## 2.1.x
+
+- RHEL 9 support added.
+
 ## 2.0.x
 
 - RHEL 7 support removed.
