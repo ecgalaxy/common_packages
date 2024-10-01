@@ -5,6 +5,7 @@ installed_packages:
   - git
   - gnupg2
   - jq
+  - less
   - nano
   - rsync
   - tar
